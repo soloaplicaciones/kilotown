@@ -543,5 +543,5 @@ Para obtener más ayuda o reportar un problema:
 ---
 
 **Versión de la guía**: 1.0.0  
-**Última actualización**: Mayo 2026  
+**Última actualización**: 28 de Mayo de 2026  
 **Mantenido por**: Equipo de Documentación Hermes Agent
