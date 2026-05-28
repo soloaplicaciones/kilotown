@@ -1,0 +1,6 @@
+interface:
+  display_name: "Kilotown"
+  short_description: "Repo-specific patterns and workflows for kilotown"
+  default_prompt: "Use the kilotown repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true

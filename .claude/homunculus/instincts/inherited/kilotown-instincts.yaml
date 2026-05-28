@@ -1,0 +1,323 @@
+# Instincts generated from https://github.com/soloaplicaciones/kilotown
+# Generated: 2026-05-28T04:42:18.409Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: kilotown-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/soloaplicaciones/kilotown
+---
+
+# Kilotown Commit Length
+
+## Action
+
+Write moderate-length commit messages (~61 characters)
+
+## Evidence
+
+- Average commit message length: 61 chars
+- Based on 4 commits
+
+---
+id: kilotown-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/soloaplicaciones/kilotown
+---
+
+# Kilotown Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: kilotown-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/soloaplicaciones/kilotown
+---
+
+# Kilotown Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: kilotown-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/soloaplicaciones/kilotown
+---
+
+# Kilotown Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: kilotown-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/soloaplicaciones/kilotown
+---
+
+# Kilotown Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: kilotown-workflow-add-new-documentation-guide
+trigger: "when doing add new documentation guide"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/soloaplicaciones/kilotown
+---
+
+# Kilotown Workflow Add New Documentation Guide
+
+## Action
+
+Follow the add-new-documentation-guide workflow:
+1. Create a new markdown file in the appropriate docs/hermes-agent/guia-usuario/ or docs/hermes-agent/guia-desarrollador/ directory.
+2. Write the content for the guide (e.g., configuration, architecture, extension).
+3. Commit the new file with a descriptive message.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: docs/hermes-agent/guia-usuario/*.md, docs/hermes-agent/guia-desarrollador/*.md
+
+---
+id: kilotown-instinct-file-naming
+trigger: "When creating a new TypeScript file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: kilotown-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: kilotown-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: kilotown-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: kilotown-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: kilotown-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: kilotown-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: kilotown-instinct-commit-prefix-docs
+trigger: "When committing documentation changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Commit Prefix Docs
+
+## Action
+
+Prefix the commit message with 'docs:'
+
+## Evidence
+
+- Seen in commit: docs: añadir guía de arquitectura de Hermes Agent
+- Pattern in commits.prefixes: docs
+
+---
+id: kilotown-instinct-commit-message-descriptive
+trigger: "When making a commit"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Commit Message Descriptive
+
+## Action
+
+Write a descriptive commit message summarizing the change
+
+## Evidence
+
+- Seen in commit: Crear guía de configuración para Hermes Agent (bead: 6b6fe9c7)
+- Seen in commit: Crear README principal de Hermes Agent con estructura completa en español
+
+---
+id: kilotown-instinct-add-doc-guide
+trigger: "When someone wants to add a new guide or manual section to the Hermes Agent documentation"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: soloaplicaciones/kilotown
+---
+
+# Kilotown Instinct Add Doc Guide
+
+## Action
+
+Create a new markdown file in the appropriate docs/hermes-agent/guia-usuario/ or docs/hermes-agent/guia-desarrollador/ directory, write the content, and commit with a descriptive message
+
+## Evidence
+
+- Workflow: add-new-documentation-guide
+- Example commits and files in workflow definition
+
